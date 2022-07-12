@@ -1,0 +1,15 @@
+{
+  "devDependencies": {
+    "@testing-library/cypress": "^8.0.2",
+    "cypress": "^9.7.0"
+  },
+  "scripts": {
+    "cypress:open": "cypress open",
+    "test": "env-cmd -f .env npx synpress run -cf synpress.json --config supportFile='support/index.js'",
+    "test:watch": "env-cmd -f .env npx synpress open -cf synpress.json"
+  },
+  "dependencies": {
+    "@synthetixio/synpress": "^1.2.0",
+    "env-cmd": "^10.1.0"
+  }
+}
